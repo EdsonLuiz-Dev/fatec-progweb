@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>formulario de matricula</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="form-header">
+      <img src="https://fatec.leandromedeiros.com/img/logo.png" alt="Logo FATEC" class="logo" onerror="this.style.display='none'" />
+      <h1>formulario de matricula</h1>
+      <p>preencha os campos.</p>
+    </header>
+
+    <form id="matricula" novalidate>
+
+      <fieldset>
+        <legend>pessoais</legend>
+
+        <div class="field">
+          <label for="nome">nome <span class="req">*</span></label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="seu nome"
+            minlength="5"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="email">email <span class="req">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@exemplo.com"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="nascimento">nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" />
+        </div>
+
+        <div class="field">
+          <label for="cpf">cpf</label>
+          <input
+            type="text"
+            id="cpf"
+            name="cpf"
+            placeholder="000.000.000-00"
+            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+            title="000.000.000-00"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>academicos</legend>
+
+        <div class="field">
+          <label for="curso">curso</label>
+          <select id="curso" name="curso">
+            <option value="">selecione</option>
+            <option value="ads">ads</option>
+            <option value="gti">gti</option>
+            <option value="redes">redes</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>periodo</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="periodo" value="manha" /> manha
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="periodo" value="noite" /> noite
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="checkbox-label">
+            <input type="checkbox" name="programou" id="programou" />
+            ja programou?
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="obs">obs</label>
+        <textarea id="obs" name="obs" rows="4" placeholder="info extra"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">enviar</button>
+    </form>
+  </main>
+</body>
+</html>

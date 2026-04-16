@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: .8rem;
+}
+
+.form-header h1,
+legend {
+  color: #0c3b6e;
+}
+
+.form-header h1 {
+  font-size: 1.6rem;
+  margin-bottom: .3rem;
+}
+
+.form-header p,
+.field label {
+  color: #666;
+}
+
+.form-header p {
+  font-size: .95rem;
+}
+
+fieldset {
+  border: 1px solid #d0d8e4;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 .5rem;
+}
+
+.field {
+  margin-bottom: .9rem;
+}
+
+.field label {
+  display: block;
+  font-size: .9rem;
+  font-weight: 600;
+  margin-bottom: .35rem;
+  color: #444;
+}
+
+.req {
+  color: #d9534f;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: .55rem .8rem;
+  border: 1px solid #c8d0db;
+  border-radius: 5px;
+  font: inherit;
+  background: #fafbfc;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0c3b6e;
+  box-shadow: 0 0 0 3px rgba(12,59,110,.12);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-group,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.radio-group {
+  gap: 1.25rem;
+  margin-top: .35rem;
+}
+
+.radio-label,
+.checkbox-label {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
+  padding: .75rem;
+  border: 0;
+  border-radius: 6px;
+  background: #0c3b6e;
+  color: #fff;
+  font: 700 1rem inherit;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #0a2f58;
+}
+
+.btn-submit:active {
+  transform: scale(.98);
+}

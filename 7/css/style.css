@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	color: #333;
+	background: #f4f6f9;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.navbar,
+.footer {
+	background: #0c3b6e;
+	color: #fff;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .9rem 2rem;
+}
+
+.navbar-logo {
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.navbar-links {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.navbar-links a,
+.sidebar ul a,
+.btn-hero {
+	text-decoration: none;
+}
+
+.navbar-links a {
+	color: #fff;
+	font-size: .9rem;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 280px;
+	padding: 2rem;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(135deg, #0c3b6e 60%, #1a5276);
+}
+
+.hero-content h1 {
+	font-size: 2.2rem;
+	margin-bottom: .6rem;
+}
+
+.hero-content p {
+	margin-bottom: 1.2rem;
+	opacity: .85;
+}
+
+.btn-hero {
+	display: inline-block;
+	padding: .6rem 1.8rem;
+	border-radius: 50px;
+	font-weight: 700;
+	color: #0c3b6e;
+	background: #f0c040;
+}
+
+.layout-body {
+	display: flex;
+	flex: 1;
+}
+
+.sidebar {
+	flex: 0 0 250px;
+	padding: 1.5rem;
+	background: #fff;
+	border-right: 1px solid #dde3ec;
+}
+
+.sidebar h3,
+.main-content h2,
+.card h3 {
+	color: #0c3b6e;
+}
+
+.sidebar h3 {
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.sidebar ul,
+.sidebar ul li {
+	list-style: none;
+}
+
+.sidebar ul li {
+	margin-bottom: .6rem;
+}
+
+.sidebar ul a {
+	color: #1a5276;
+	font-size: .9rem;
+}
+
+.main-content {
+	flex: 1;
+	padding: 2rem;
+}
+
+.main-content h2 {
+	margin-bottom: 1.2rem;
+}
+
+.cards-flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.card {
+	flex: 1 1 180px;
+	padding: 1.2rem;
+	background: #fff;
+	border: 1px solid #ccd6e4;
+	border-radius: 8px;
+	box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+
+.card p {
+	font-size: .9rem;
+	color: #666;
+}
+
+.footer {
+	margin-top: auto;
+	padding: 1.2rem;
+	text-align: center;
+	color: #aec6e8;
+	font-size: .85rem;
+}
