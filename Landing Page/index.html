@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Edson Luiz — Frontend Developer & WordPress Specialist com Sage (Roots)">
+  <title>Edson Luiz | Frontend Developer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="navbar__container">
+      <img src="assets/images/hero-image.png" alt="Pato" class="navbar__logo">
+      <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+          <li><a href="#projetos" class="navbar__link">Projetos</a></li>
+          <li><a href="#habilidades" class="navbar__link">Habilidades</a></li>
+          <li><a href="#contato" class="navbar__link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="clip"><p class="hero__greeting">Olá, eu sou</p></div>
+          <div class="clip"><h1 class="hero__name">Edson Luiz</h1></div>
+          <div class="clip"><p class="hero__role">Frontend Developer & WordPress Specialist</p></div>
+          <div class="hero__ctas">
+            <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+            <a href="#contato" class="btn btn--outline">Falar comigo</a>
+          </div>
+        </div>
+
+        <img class="hero-image" src="assets/images/hero-image.png" alt="Pato">
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="sobre section">
+      <div class="container">
+        <h2 class="section__title">Sobre mim</h2>
+        <div class="sobre__grid">
+          <div class="sobre__foto">
+            <img
+              src="assets/images/eu.jpeg"
+              alt="Foto de perfil de Edson Luiz"
+              class="sobre__img"
+            >
+          </div>
+          <div class="sobre__texto">
+            <p>
+              Desenvolvedor Frontend com experiência em WordPress, especializado
+              em criação de temas customizados com Sage (Roots). Trabalho com
+              HTML, SCSS, JavaScript, PHP, Blade e ACF, WooCommerce, Stripe e
+              outros, contribuindo em projetos de médio e grande porte.
+            </p>
+            <p>
+              Tenho comunicação diária em inglês com clientes nativos e
+              experiência sólida na configuração de ambientes de desenvolvimento
+              locais com Lando. Atualmente curso Análise e Desenvolvimento de
+              Sistemas e sigo aperfeiçoando minhas habilidades em
+              desenvolvimento web moderno.
+            </p>
+            <a href="assets/curriculo.pdf" class="btn btn--secondary" download>
+              Baixar currículo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos" class="projetos section section--alt">
+      <div class="container">
+        <h2 class="section__title">Projetos</h2>
+        <div class="projetos__grid">
+
+          <article class="card">
+            <img
+              src="assets/images/placeholder-projeto.jpg"
+              alt="Screenshot do projeto App de Tarefas"
+              class="card__img"
+            >
+            <div class="card__body">
+              <h3 class="card__title">App de Tarefas</h3>
+              <p class="card__desc">
+                Aplicação de gerenciamento de tarefas com drag-and-drop e
+                persistência em localStorage.
+              </p>
+              <div class="card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card__links">
+                <a href="#" class="btn btn--sm btn--primary">Demo</a>
+                <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="assets/images/placeholder-projeto.jpg"
+              alt="Screenshot do projeto E-commerce"
+              class="card__img"
+            >
+            <div class="card__body">
+              <h3 class="card__title">E-commerce</h3>
+              <p class="card__desc">
+                Loja virtual com carrinho de compras, filtros de produtos e
+                integração com API de pagamentos.
+              </p>
+              <div class="card__tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="card__links">
+                <a href="#" class="btn btn--sm btn--primary">Demo</a>
+                <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="assets/images/placeholder-projeto.jpg"
+              alt="Screenshot do projeto Dashboard"
+              class="card__img"
+            >
+            <div class="card__body">
+              <h3 class="card__title">Dashboard Analytics</h3>
+              <p class="card__desc">
+                Painel de métricas em tempo real com gráficos interativos e
+                exportação de relatórios.
+              </p>
+              <div class="card__tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">REST API</span>
+              </div>
+              <div class="card__links">
+                <a href="#" class="btn btn--sm btn--primary">Demo</a>
+                <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section id="habilidades" class="habilidades section">
+      <div class="container">
+        <h2 class="section__title">Habilidades</h2>
+        <div class="habilidades__grupos">
+
+          <div class="habilidades__grupo">
+            <h3 class="habilidades__subtitulo">Frontend & CMS</h3>
+            <div class="habilidades__tags">
+              <span class="tag tag--lg">HTML5</span>
+              <span class="tag tag--lg">CSS3 / SCSS</span>
+              <span class="tag tag--lg">JavaScript</span>
+              <span class="tag tag--lg">PHP</span>
+              <span class="tag tag--lg">Tailwind CSS</span>
+              <span class="tag tag--lg">WordPress</span>
+              <span class="tag tag--lg">Sage (Roots)</span>
+              <span class="tag tag--lg">Blade</span>
+              <span class="tag tag--lg">ACF</span>
+              <span class="tag tag--lg">WooCommerce</span>
+            </div>
+          </div>
+
+          <div class="habilidades__grupo">
+            <h3 class="habilidades__subtitulo">Frameworks & Libs</h3>
+            <div class="habilidades__tags">
+              <span class="tag tag--lg">React Native</span>
+              <span class="tag tag--lg">Node.js</span>
+              <span class="tag tag--lg">Elementor</span>
+              <span class="tag tag--lg">JetEngine</span>
+              <span class="tag tag--lg">Stripe</span>
+              <span class="tag tag--lg">OOP</span>
+            </div>
+          </div>
+
+          <div class="habilidades__grupo">
+            <h3 class="habilidades__subtitulo">Ferramentas</h3>
+            <div class="habilidades__tags">
+              <span class="tag tag--lg">Git / GitHub</span>
+              <span class="tag tag--lg">Lando</span>
+              <span class="tag tag--lg">Docker</span>
+              <span class="tag tag--lg">Figma</span>
+              <span class="tag tag--lg">Vite</span>
+              <span class="tag tag--lg">Composer</span>
+              <span class="tag tag--lg">npm</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="contato section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contato</h2>
+        <p class="contato__subtitulo">
+          Tem um projeto em mente? Vamos conversar!
+        </p>
+        <div class="form-container">
+          <form class="form" action="#" method="post" novalidate>
+            <div class="form__group">
+              <label for="nome" class="form__label">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form__input"
+                placeholder="Seu nome completo"
+                required
+                autocomplete="name"
+              >
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="seu@email.com"
+                required
+                autocomplete="email"
+              >
+            </div>
+            <div class="form__group">
+              <label for="assunto" class="form__label">Assunto</label>
+              <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                class="form__input"
+                placeholder="Como posso te ajudar?"
+              >
+            </div>
+            <div class="form__group">
+              <label for="mensagem" class="form__label">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="form__textarea"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar mensagem
+            </button>
+          </form>
+
+          <img src="/assets/images/hero-image.png" alt="Pato" class="form-duck">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__copy">
+        &copy; 2026 Edson Luiz. Feito com HTML, CSS e JavaScript.
+      </p>
+      <nav class="footer__nav" aria-label="Redes sociais">
+        <a href="https://github.com/EdsonLuiz-Dev" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:edsonitape.contato@gmail.com" class="footer__link">E-mail</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
