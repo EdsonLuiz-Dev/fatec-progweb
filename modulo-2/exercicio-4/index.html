@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 4 — Lista de Tarefas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .app {
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4a90e2;
+    }
+
+    button[type="submit"] {
+      padding: 10px 18px;
+      background: #4a90e2;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button[type="submit"]:hover {
+      background: #357abd;
+    }
+
+    #busca {
+      width: 100%;
+      padding: 9px 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-bottom: 16px;
+      outline: none;
+    }
+
+    #lista {
+      list-style: none;
+    }
+
+    #lista li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-size: 14px;
+      color: #333;
+      transition: background 0.15s;
+    }
+
+    #lista li:hover {
+      background: #eef2f7;
+    }
+
+    #lista li.concluida span {
+      text-decoration: line-through;
+      color: #999;
+    }
+
+    .btn-remover {
+      background: none;
+      border: none;
+      color: #e25c4a;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 0 4px;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>Lista de Tarefas</h1>
+
+    <form id="form">
+      <input type="text" id="input-tarefa" placeholder="Nova tarefa..." required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <input type="text" id="busca" placeholder="Buscar tarefa...">
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3 — DOM e Eventos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    #btn-filtrar {
+      background: #4a90e2;
+      color: #fff;
+    }
+
+    #btn-limpar {
+      background: #e25c4a;
+      color: #fff;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      width: 200px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-left: 4px solid #4a90e2;
+    }
+
+    .card.hidden {
+      display: none;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    .card .preco {
+      font-size: 18px;
+      font-weight: 700;
+      color: #4a90e2;
+      margin-bottom: 4px;
+    }
+
+    .card .categoria {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Produtos</h1>
+
+  <div class="botoes">
+    <button id="btn-filtrar">Mostrar só eletrônicos</button>
+    <button id="btn-limpar">Limpar</button>
+  </div>
+
+  <div id="container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

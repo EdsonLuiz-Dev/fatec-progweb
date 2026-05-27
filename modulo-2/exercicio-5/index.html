@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 5 — PokéAPI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+
+    .busca {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .busca input {
+      padding: 12px 18px;
+      border: 2px solid #444;
+      border-radius: 8px;
+      font-size: 15px;
+      background: #16213e;
+      color: #fff;
+      outline: none;
+      width: 240px;
+      transition: border-color 0.2s;
+    }
+
+    .busca input:focus {
+      border-color: #e2b96a;
+    }
+
+    .busca button {
+      padding: 12px 22px;
+      background: #e2b96a;
+      color: #1a1a2e;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .busca button:hover {
+      background: #d4a853;
+    }
+
+    #resultado {
+      text-align: center;
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .card-pokemon {
+      border-radius: 14px;
+      padding: 28px 32px;
+      min-width: 280px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    .card-pokemon img {
+      width: 130px;
+      height: 130px;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+    }
+
+    .card-pokemon h2 {
+      font-size: 24px;
+      text-transform: capitalize;
+      margin: 10px 0 8px;
+    }
+
+    .tipos {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .tipo-badge {
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(255,255,255,0.25);
+      text-transform: capitalize;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .stat {
+      background: rgba(0,0,0,0.2);
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      opacity: 0.75;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-valor {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .erro {
+      color: #e25c4a;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokédex</h1>
+
+  <div class="busca">
+    <input type="text" id="input-pokemon" placeholder="Nome ou número...">
+    <button id="btn-buscar">Buscar</button>
+  </div>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
